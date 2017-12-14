@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.justudin.rtlsclient.MainActivity">
+
+    <ListView
+        android:id="@+id/list_ranging"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:padding="10dp"></ListView>
+
+    <LinearLayout android:id="@+id/patientInfo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/patientInfoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infopatient_label"
+            android:textSize="40sp" />
+        <TextView
+            android:id="@+id/patientInfoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/temp"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/infoLayoutOutside"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patientInfo">
+        <TextView
+            android:id="@+id/infoLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_label"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/infoLayoutOutside2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoLayoutOutside">
+
+        <TextView
+            android:id="@+id/locationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/temp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
