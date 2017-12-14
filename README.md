@@ -1,8 +1,11 @@
-# Android-BLE-Reco2
+## Android-BLE-Reco2
 
 Android + Socket.IO + Reco2 SDK to be used for RTLS Indoor BLE-based.
 
+## Screenshots
+
 ![FrontUI](frontUI.png)
+
 ![BLE is Detected](detectble.png)
 
 ## How to use
