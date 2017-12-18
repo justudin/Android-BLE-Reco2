@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     static String dbg = "UDN";
     public final static String SERVER_URL = "https://IPADD:PORT";
     public String android_id;
+    public final static String SOCKET_CHANNEL = "socket_channel";
 
     //This is a default proximity uuid of the RECO 24DDF411-8CF1-440C-87CD-E368DAF9C93E
     public static final String RECO_UUID = "24DDF411-8CF1-440C-87CD-E368DAF9C93E";

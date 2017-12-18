@@ -106,7 +106,7 @@ public class RecoRangingListAdapter extends BaseAdapter {
             obj.put("distance", String.format("%.2f", rb.getAccuracy())+"m");
             // Send it to the server
             obj.put("bleinfo", ble);
-            socket.emit("postmonitoringrtls", obj.toString());
+            socket.emit(MainActivity.SOCKET_CHANNEL, obj.toString());
             //Log.i("recoBeacon: ",rb.getProximityUuid());
         }
     }

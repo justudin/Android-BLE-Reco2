@@ -155,7 +155,7 @@ public class RecoRangingActivity extends RecoActivity implements RECORangingList
             }
 
             // Send it to the server
-            socket.emit("postmonitoringrtls", obj.toString());
+            socket.emit(MainActivity.SOCKET_CHANNEL, obj.toString());
 
 
         } else {
